@@ -58,7 +58,7 @@ body{
     font-style: italic;
 }
 
-#word-02:hover{
+#word-02{
     color: #FFAA00;
 
 }
@@ -96,7 +96,7 @@ body{
     .navigation-bar ul {
         padding: 8px;
         /* Reduce padding */
-        border-radius: 50px;
+        border-radius: 10px;
         /* Smaller radius for a compact look */
     }
 
@@ -105,7 +105,7 @@ body{
         /* Smaller clickable area */
         font-size: 12px;
         /* Reduce font size */
-        border-radius: 30px;
+        border-radius: 10px;
         /* Adjust radius for links */
     }
         .hero{
@@ -115,11 +115,13 @@ body{
         }
         .hero span{
             font-size: 70px;
+            margin-bottom: -10px;
         }
 
         .hero p{
             font-size: 16px;
-            margin-top: 60px;
+            margin-top: 50px;
+            text-align: left;
         }
 
         .hero a{
@@ -130,7 +132,7 @@ body{
         .hero a {
             background-color: transparent;
             padding: 10px 15px;
-            border-radius: 50px;
+            border-radius: 10px;
             font-size: 12px;
             border: 1px solid;
             font-family: Poppins, sans-serif;
