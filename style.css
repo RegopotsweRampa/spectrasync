@@ -111,7 +111,66 @@ padding: 80px;
     font-style: italic;
     margin-bottom: 10px;
 }
+.circle-motion {
+    position: absolute;
+    left: -250px;
+    /* Move the entire container to the left */
+}
+.circle{
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+}
+.bullet{
+    width: 20px;
+    height: 20px;
+    background-color: #FFAA00;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 54.6%;
+    left: 50%;
+    transform:  translateX(50%);
+    animation: smoothStops 6s cubic-bezier(0.42, 0, 0.58,1) infinite;
+}
+.content-box{
+    width: 300px;
+    background-color: #fff;
+    padding: 15px;
+    color: #000;
+    text-align: start;
+    border-radius: 50%;
+    position: absolute;
+    top: 198%;
+    transform: translateY(-50%);
+    animation: contentVisibility 10s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.sub-heading-02{
+    font-weight: 500;
+    font-size: 24px;
+}
 
+@keyframes smoothStops {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg) translateX(200px);
+
+    }
+    100%{
+            transform: translate(-50%, -50%) rotate(-360deg) translateX(200px);
+    }
+
+}  
+
+@keyframes identifier {
+    
+}
 @media (max-width: 768px) {
     .navigation-bar ul {
         padding: 8px;
@@ -178,5 +237,43 @@ padding: 80px;
             font-size: 16px;
         }
 
+        .circle {
+            width: 200px;
+            height: 200px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            overflow: hidden;
+        }
 
+                .circle-motion {
+                    position: absolute;
+                    left: -120px;
+                    /* Move the entire container to the left */
+                }
+                .bullet {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #FFAA00;
+                    border: 2px solid rgb(255, 255, 255);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 58%;
+                    left: 50%;
+                    transform: translateX(50%);
+                    animation: smoothStops 6s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+                }
+@keyframes smoothStops {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(100px);
+
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg) translateX(100px);
+    }
+
+}
 }
