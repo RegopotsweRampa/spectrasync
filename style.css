@@ -94,7 +94,7 @@ padding: 80px;
 }
 
 #about{
-    padding: 20px 0;
+    padding: 80px 20px;
     text-align: center;
     color: #ffffff;
 
@@ -168,8 +168,61 @@ padding: 80px;
 
 }  
 
-@keyframes identifier {
-    
+#services{
+    margin-top: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px; 
+    margin-top: 20px;  
+}
+
+.card{
+    width: auto;
+    height: 200px;
+    background-color: #FFAA00;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-02{
+    width: auto;
+    height: 200px;
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card li, .card-02 li{
+    list-style-type: none;
+}
+#card-title h2{
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#vision-mission{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 80px 20px;
+}
+
+#mission, #vision{
+    padding: 40px;
+}
+#mission h2, #vision h2{
+    font-style: italic;
+    font-weight: 400;
+}
+#mission span{
+    font-weight: 700;
 }
 @media (max-width: 768px) {
     .navigation-bar ul {
@@ -229,11 +282,11 @@ padding: 80px;
         .contents{
             padding: 15px;
         }
-        .description{
+        .description, #card-list{
             font-size: 12px;
         }
 
-        .sub-heading h2{
+        .sub-heading h2, #card-title h2{
             font-size: 16px;
         }
 
@@ -276,4 +329,32 @@ padding: 80px;
     }
 
 }
+#services{
+    margin-top: 280px;
+    padding: 90px 5px;
+}
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+.card, .card-02{
+    height: 160px;
+}
+
+#vision-mission {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-top: 0;
+    padding: 0;
+}
+#mission p, #mission span, #mission li, #vision p {
+    font-size: 12px;
+}
+#vision{
+    margin-bottom: -20px;
+}
+
 }
