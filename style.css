@@ -7,7 +7,6 @@
 
 body{
     font-family: Poppins, sans-serif;
-    padding: 20px;
     scroll-behavior: smooth;
 }
 
@@ -170,7 +169,7 @@ padding: 80px;
 
 #services{
     margin-top: 40%;
-    padding: 90px 5px;
+    padding: 90px 20px;
     text-align: center;
 }
 
