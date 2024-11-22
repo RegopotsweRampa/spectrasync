@@ -8,6 +8,7 @@
 body{
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
+    margin: 10px;
 }
 
 .navigation-bar {
@@ -187,7 +188,7 @@ padding: 80px;
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-}
+} 
 .card-02{
     width: auto;
     height: 200px;
