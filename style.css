@@ -506,6 +506,9 @@ a {
     /* Highlight links */
     text-decoration: none;
 }
+#mission h2, #vision h2{
+    color: #000000;
+}
 
 a:hover {
     text-decoration: underline;
