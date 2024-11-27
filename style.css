@@ -506,7 +506,7 @@ a {
     /* Highlight links */
     text-decoration: none;
 }
-#mission h2, #vision h2{
+#mission h2, #vision h2, #contact h2{
     color: #000000;
 }
 
