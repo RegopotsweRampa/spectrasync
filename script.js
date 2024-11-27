@@ -25,3 +25,16 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const number = document.getElementById('number').value;
+    const message = document.getElementById('message').value;
+
+    const whatsappNumber = '27601903181';
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=Name: ${name}%0AContact: ${number}%0A${message}`;
+
+    window.open(whatsappLink, '_blank');
+});
