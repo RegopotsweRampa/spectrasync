@@ -111,10 +111,11 @@ padding: 80px;
     font-style: italic;
     margin-bottom: 10px;
 }
+/*
 .circle-motion {
     position: absolute;
     left: -250px;
-    /* Move the entire container to the left */
+    Move the entire container to the left 
 }
 .circle{
     width: 400px;
@@ -167,11 +168,12 @@ padding: 80px;
     }
 
 }  
-
+*/
 #services{
     margin-top: 40%;
     padding: 90px 20px;
     text-align: center;
+    margin-top: -100px;
 }
 
 .service-container{
@@ -397,7 +399,7 @@ footer{
         .sub-heading h2, #card-title h2, #vision h2, #mission h2{
             font-size: 16px;
         }
-
+/*
         .circle {
             width: 300px;
             height: 300px;
@@ -412,7 +414,7 @@ footer{
                 .circle-motion {
                     position: absolute;
                     left: -220px;
-                    /* Move the entire container to the left */
+                    Move the entire container to the left 
                 }
                 .bullet {
                     width: 10px;
@@ -436,9 +438,8 @@ footer{
         transform: translate(-50%, -50%) rotate(-360deg) translateX(150px);
     }
 
-}
+}*/
 #services{
-    margin-top: 280px;
     padding: 90px 5px;
 }
 .service-container {
@@ -493,7 +494,9 @@ footer{
     text-align: left;
     /* Align content to the left */
 }
-
+#sub1{
+    color: #000;
+}
 h2 {
     font-size: 1.5rem;
     color: #ffffff;

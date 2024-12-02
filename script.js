@@ -38,3 +38,8 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     window.open(whatsappLink, '_blank');
 });
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-XXXXXXXXX-X');
